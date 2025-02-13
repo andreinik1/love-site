@@ -1,0 +1,30 @@
+/* Скрыть скроллбар на всей странице */
+body,
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+.mobile-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #c8baff; /* Светло-фиолетовый фон */
+  text-align: center;
+  padding: 20px;
+}
+
+.mobile-image {
+  width: 80%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.mobile-text {
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(200, 186, 255, 0.8),
+    0 0 12px rgba(150, 130, 255, 0.5);
+}

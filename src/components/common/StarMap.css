@@ -1,0 +1,90 @@
+.star-map {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1rem;
+  background-image: url(../../assets/StarMap.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star {
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  animation: floatt 3s infinite ease-in-out;
+}
+
+.star:hover {
+  transform: scale(1.4);
+}
+
+@keyframes floatt {
+  0%,
+  100% {
+    transform: translateY(2.5px);
+  }
+  50% {
+    transform: translateY(-2.5px);
+  }
+}
+
+.tooltip {
+  position: absolute;
+  background: rgba(172, 139, 139, 0.15);
+  color: #d4d4f7;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 16px;
+  backdrop-filter: blur(10px);
+  white-space: normal;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  pointer-events: none;
+  width: 15%; /* Ширина подсказки */
+  height: 20%; /* Высота подсказки */
+  max-width: 15%; /* Максимальная ширина, чтобы не растягивался */
+  overflow-y: auto; /* Добавляет скролл, если текста слишком много */
+  max-height: 25%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 10;
+}
+
+.tooltip.active {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+/* Добавьте в свой CSS (например, в StarMap.css) */
+.tooltip-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tooltip-img,
+.tooltip-video {
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+@keyframes tooltipFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+}

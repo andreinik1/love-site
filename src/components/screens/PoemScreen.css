@@ -1,0 +1,98 @@
+/* src/components/screens/PoemScreen.css */
+
+.poem-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  background-color: transparent;
+  padding: 0 10%;
+  overflow: hidden; /* Скроллбар для всего экрана скрыт */
+}
+
+/* Заголовок */
+.poem-header {
+  font-size: 3rem; /* Увеличиваем размер шрифта для заголовка */
+  margin-bottom: 1.5rem;
+  color: #c8baff; /* Светло-фиолетовый */
+  text-shadow: 0 0 8px rgba(200, 186, 255, 0.8),
+    0 0 12px rgba(150, 130, 255, 0.5);
+  z-index: 1; /* Делаем заголовок поверх, чтобы он не скрывался */
+}
+
+/* Контейнер для контента */
+.poem-content {
+  display: flex;
+  flex-direction: column; /* Картинка и текст в колонку */
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  max-height: 100vh; /* Ограничиваем высоту для экрана */
+  overflow-y: auto; /* Общий скроллбар для всего контента */
+}
+
+/* Изображение */
+.poem-image {
+  width: 40%; /* Увеличиваем размер изображения */
+  margin-bottom: 2rem; /* Отступ снизу от картинки */
+  border-radius: 10px; /* Края изображения закруглим */
+}
+
+/* Текст стиха */
+.poem-text {
+  font-size: 1.5rem; /* Увеличиваем размер шрифта для текста */
+  color: #c8baff;
+  line-height: 1.8; /* Увеличиваем межстрочный интервал для лучшей читаемости */
+  font-family: "Arial", sans-serif;
+  letter-spacing: 0.05rem;
+  text-align: left;
+  white-space: pre-wrap; /* Сохраняем переносы строк */
+  max-width: 60%;
+  overflow-wrap: break-word; /* Для предотвращения переполнения текста */
+  height: 100%; /* Стираем ограничение высоты */
+  max-height: 100%; /* Обеспечиваем, чтобы текст не вылезал за экран */
+  overflow-y: scroll; /* Скроллбар для текста */
+  scrollbar-width: thin; /* Уменьшаем ширину скроллбара для Firefox */
+  scrollbar-color: transparent transparent; /* Делаем скроллбар невидимым для Firefox */
+}
+
+/* Для Webkit браузеров (Chrome, Safari) */
+.poem-text::-webkit-scrollbar {
+  width: 8px; /* Ширина скроллбара */
+}
+
+.poem-text::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Делаем ползунок невидимым */
+}
+
+.poem-text::-webkit-scrollbar-track {
+  background-color: transparent; /* Делаем фон скроллбара невидимым */
+}
+
+.poem-text span {
+  color: #ff8b8b; /* Нежно-красный для акцентов */
+  text-shadow: 0 0 8px rgba(255, 139, 139, 0.8);
+}
+
+@media (max-width: 1024px) {
+  .poem-content {
+    flex-direction: column; /* Для меньших экранов контент будет в колонку */
+  }
+
+  .poem-image {
+    width: 50%; /* Уменьшаем размер изображения для маленьких экранов */
+    margin-bottom: 1.5rem;
+  }
+
+  .poem-text {
+    max-width: 100%; /* Текст будет на всю ширину */
+    font-size: 1.2rem; /* Меньший размер текста для маленьких экранов */
+    height: auto; /* Убираем жесткое ограничение высоты */
+  }
+}

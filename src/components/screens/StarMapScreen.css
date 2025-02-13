@@ -1,0 +1,27 @@
+.star-map-screen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100vh; /* Это можно изменить, если нужно увеличить высоту */
+  overflow: hidden;
+}
+
+.star-map-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #c8baff; /* Светло-фиолетовый */
+  text-shadow: 0 0 8px rgba(200, 186, 255, 0.8),
+    0 0 12px rgba(150, 130, 255, 0.5);
+  text-align: center;
+  z-index: 1;
+}
+
+.star-map-bg {
+  width: 80%; /* Картинка будет занимать 80% ширины контейнера */
+  height: auto; /* Высота картинки будет пропорциональной */
+  object-fit: contain; /* Картинка будет растягиваться, сохраняя пропорции */
+  max-height: 100%; /* Ограничиваем высоту, чтобы картинка не вылезала */
+}
