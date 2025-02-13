@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/andreinik1/love-site.git/static/css/main.51b59882.css",
+    "main.js": "/andreinik1/love-site.git/static/js/main.d26d4c71.js",
+    "static/media/FirstOctoberVideo.mp4": "/andreinik1/love-site.git/static/media/FirstOctoberVideo.9281baad166079edf99c.mp4",
+    "static/media/StarMap.jpg": "/andreinik1/love-site.git/static/media/StarMap.97692c9dc497f4f2efa3.jpg",
+    "static/media/andrei.jpg": "/andreinik1/love-site.git/static/media/andrei.939a9771740184c86287.jpg",
+    "static/media/heart1.png": "/andreinik1/love-site.git/static/media/heart1.3ee723a568e4be0d8c0e.png",
+    "static/media/heart2.png": "/andreinik1/love-site.git/static/media/heart2.eca78b3de1b0b59546c6.png",
+    "static/media/FisrtWishesScreen.png": "/andreinik1/love-site.git/static/media/FisrtWishesScreen.1356823b03da37625223.png",
+    "static/media/WelcomeScreenCat.png": "/andreinik1/love-site.git/static/media/WelcomeScreenCat.77a3f091d6915a318923.png",
+    "static/media/SecondWishesScreen.png": "/andreinik1/love-site.git/static/media/SecondWishesScreen.bd51efa0a4f100509a3e.png",
+    "static/media/PoemScreenCats.png": "/andreinik1/love-site.git/static/media/PoemScreenCats.2463bea74e6ccb06e149.png",
+    "static/media/FinalScreenCats.png": "/andreinik1/love-site.git/static/media/FinalScreenCats.0272e5864d39f469478d.png",
+    "static/media/margo.jpg": "/andreinik1/love-site.git/static/media/margo.ec4325d73d44d3444c71.jpg",
+    "static/media/ThirdWishesScreen.png": "/andreinik1/love-site.git/static/media/ThirdWishesScreen.efa5022e1c734ff28240.png",
+    "static/media/PlansHeart.png": "/andreinik1/love-site.git/static/media/PlansHeart.91a74de905fc59a8cd0c.png",
+    "static/media/star.png": "/andreinik1/love-site.git/static/media/star.cbc926e35cdf905038cd.png",
+    "static/media/phoneImg.png": "/andreinik1/love-site.git/static/media/phoneImg.0d742b6248a82d022aa5.png",
+    "index.html": "/andreinik1/love-site.git/index.html",
+    "main.51b59882.css.map": "/andreinik1/love-site.git/static/css/main.51b59882.css.map",
+    "main.d26d4c71.js.map": "/andreinik1/love-site.git/static/js/main.d26d4c71.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.51b59882.css",
+    "static/js/main.d26d4c71.js"
+  ]
+}
